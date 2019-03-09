@@ -5,8 +5,6 @@ with open('README.md', 'r') as f:
 
 
 setup(
-    author='Lukas Sebastian Müller',
-    author_email='lukassebastianmueller@gmail.com',
     name='sp800_22_tests',
     url='https://github.com/luukbox/sp800_22_tests',
     version='0.0.1',

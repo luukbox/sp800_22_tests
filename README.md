@@ -1,4 +1,29 @@
 # sp800_22_tests
+
+This is a fork from https://github.com/dj-on-github/sp800_22_tests. I refactored the original implementation to be able to test sequences via a function call and access the results.
+
+## Installation
+
+```bash
+$ pip install -e git+git://github.com/luukbox/sp800_22_tests@master#egg=sp800_22_tests
+
+```
+
+## Usage
+
+```python
+from sp800_22_tests import test_sequence, print_summary
+
+# run the tests
+# results = [(test_name: str, p_value: float, success: bool),..]
+results = test_sequence("path/to/sequence/seq.bin")
+
+# print the summary
+print_summary(results)
+```
+
+# Original Implemantation:
+
 A python implementation of the SP800-22 Rev 1a PRNG test suite.
 
 The NIST STS-2.1.2 implementation of the SP800-22 Rev1a tests has some problems. It tends to crash a lot and give the wrong result.
@@ -135,4 +160,3 @@ cumulative_sums_test                     0.0                FAIL
 random_excursion_test                    2.20517667303e-09  FAIL
 random_excursion_variant_test            0.0                FAIL
 ```
-
