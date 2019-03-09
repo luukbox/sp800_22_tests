@@ -1,6 +1,6 @@
 # sp800_22_tests
 
-This is a fork from https://github.com/dj-on-github/sp800_22_tests. I refactored the original implementation to be able to test sequences via a function call and access the results.
+This is a fork of https://github.com/dj-on-github/sp800_22_tests. I refactored the original implementation to be able to programmatically test sequences and work with the results.
 
 ## Installation
 
