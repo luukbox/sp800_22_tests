@@ -21,7 +21,7 @@
 # along with sp800_22_tests.  If not, see <http://www.gnu.org/licenses/>.
  
 from __future__ import print_function
-
+from tqdm import tqdm
 import math
 #from scipy.special import gamma, gammainc, gammaincc
 from gamma_functions import *
@@ -71,7 +71,7 @@ def linear_complexity_test(bits,patternlen=None):
     
     # Step 2 Compute the linear complexity of the blocks
     LC = list()
-    for i in range(N):
+    for i in tqdm(range(N), ascii=True, desc="Compute the linear complexity of the blocks"):
         x = bits[(i*M):((i+1)*M)]
         LC.append(berelekamp_massey(x)[0])
     
@@ -82,7 +82,7 @@ def linear_complexity_test(bits,patternlen=None):
     mu =  a+b-c
     
     T = list()
-    for i in range(N):
+    for i in tqdm(range(N), ascii=True, desc="Compute mean"):
         x = ((-1.0)**M) * (LC[i] - mu) + (2.0/9.0)
         T.append(x)
         
