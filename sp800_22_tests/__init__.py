@@ -1,1 +1,16 @@
-from .sp800_22_tests import test_sequence, print_summary
+from .sp800_22_tests import test_sequence, print_summary, read_bits_from_file
+from .sp800_22_monobit_test import monobit_test
+from .sp800_22_frequency_within_block_test import frequency_within_block_test
+from .sp800_22_runs_test import runs_test
+from .sp800_22_longest_run_ones_in_a_block_test import longest_run_ones_in_a_block_test
+from .sp800_22_binary_matrix_rank_test import binary_matrix_rank_test
+from .sp800_22_dft_test import dft_test
+from .sp800_22_non_overlapping_template_matching_test import non_overlapping_template_matching_test
+from .sp800_22_overlapping_template_matching_test import overlapping_template_matching_test
+from .sp800_22_maurers_universal_test import maurers_universal_test
+from .sp800_22_linear_complexity_test import linear_complexity_test
+from .sp800_22_approximate_entropy_test import approximate_entropy_test
+from .sp800_22_cumulative_sums_test import cumulative_sums_test
+from .sp800_22_random_excursion_test import random_excursion_test
+from .sp800_22_random_excursion_variant_test import random_excursion_variant_test
+

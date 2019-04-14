@@ -31,7 +31,7 @@ dirpath = os.path.dirname(os.path.abspath(filename))
 sys.path.append(dirpath)
 
 
-def read_bits_from_file(filename, bigendian):
+def read_bits_from_file(filename, bigendian=True):
     bitlist = list()
     if filename == None:
         f = sys.stdin
@@ -58,7 +58,7 @@ def read_bits_from_file(filename, bigendian):
     return bitlist
 
 
-def test_sequence(filename, bigendian=False):
+def test_sequence(filename, bigendian=True):
 
     # X 3.1  Frequency (Monobits) Test
     # X 3.2  Frequency Test within a Block
