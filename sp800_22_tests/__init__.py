@@ -9,6 +9,7 @@ from .sp800_22_non_overlapping_template_matching_test import non_overlapping_tem
 from .sp800_22_overlapping_template_matching_test import overlapping_template_matching_test
 from .sp800_22_maurers_universal_test import maurers_universal_test
 from .sp800_22_linear_complexity_test import linear_complexity_test
+from .sp800_22_serial_test import serial_test
 from .sp800_22_approximate_entropy_test import approximate_entropy_test
 from .sp800_22_cumulative_sums_test import cumulative_sums_test
 from .sp800_22_random_excursion_test import random_excursion_test
